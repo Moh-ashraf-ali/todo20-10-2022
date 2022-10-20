@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+
+    <div class="container ">
+        <div class="modal-body col-md-6 ">
+            <div class="card-body">
+                <div class="form-group">
+                    <h1 class="text-info "> To Do App</h1> <i class=" darkMood float-right fa-solid fa-moon"></i>
+                    <label> Enter Student Name</label>
+                    <input id="taskData" type="text" placeholder="Student Name" class="form-control">
+                    <div class=" validationMeassage hide alert alert-danger">
+                        <span class="validationSpan"></span>
+                        <i class=" float-right closeValidationMeassage fa-solid fa-square-xmark"></i>
+                    </div>
+                    <label> Enter student image url</label>
+                    <input id="taskData" type="url" placeholder="image url" class="form-control">
+                    <div class=" validationMeassage hide alert alert-danger">
+                        <span class="validationSpan"></span>
+                        <i class=" float-right closeValidationMeassage fa-solid fa-square-xmark"></i>
+                    </div>
+                    <label> Joining Date</label><br>
+                    <input type="date">
+                    <div class=" validationMeassage hide alert alert-danger">
+                        <span class="validationSpan"></span>
+                        <i class=" float-right closeValidationMeassage fa-solid fa-square-xmark"></i>
+                    </div>
+                    <br>
+                    <br>
+                    <button class="btn btn-block  addRecord btn-primary">Add Record</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container  ">
+
+            <div class="modal-body col-md-6 ">
+                <h1 class="text-info text-center"> Tasks</h1>
+
+                <div class="card-body">
+                    <div class="notask ">
+                        <div class=" text-center alert alert-danger" role="alert">
+                            No student data added
+                        </div>
+                    </div>
+                    <div class="allTasks ">
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--  end todoapp -->
+
+
+        <script src="./js/app.js"></script>
+</body>
+
+</html>
